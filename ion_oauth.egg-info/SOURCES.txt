@@ -1,4 +1,4 @@
-README.rst
+README.md
 setup.py
 ion_oauth/__init__.py
 ion_oauth/oauth.py

@@ -1,21 +1,34 @@
-Metadata-Version: 1.1
+Metadata-Version: 2.1
 Name: ion-oauth
-Version: 0.1
+Version: 0.2
 Summary: python-social-auth plugin for ion
 Home-page: https://github.com/tjcsl/ion_oauth
 Author: The TJHSST Computer Systems Lab
 Author-email: intranet@tjhsst.edu
 License: GPL
-Description: =========
-        ion_oauth
-        =========
+Description: # ion-oauth
+        Ion Oauth2 backend for [python-social-auth](https://github.com/python-social-auth/social-app-django).
+        
         
         Setup
         -----
         
-        Run pip install ion_oauth.
+        Install with pip:
         
-        Add AUTHENTICATION_BACKENDS = ['ion_oauth.oauth.IonOauth2'] to your settings.py for a django project.
+        ```
+        pip install ion_oauth
+        ```
+        
+        Add
+        ```
+        AUTHENTICATION_BACKENDS = [
+            ...
+            'ion_oauth.oauth.IonOauth2',
+        ]
+        ```
+        to your `settings.py` for a django project.
+        
+        Define `SOCIAL_AUTH_ION_KEY` and `SOCIAL_AUTH_ION_SECRET` in your settings.py by following the instructions at https://tjcsl.github.io/ion/developing/oauth.html
         
 Platform: UNKNOWN
 Classifier: Development Status :: 5 - Production/Stable
@@ -23,3 +36,4 @@ Classifier: License :: OSI Approved :: GNU General Public License v2 or later (G
 Classifier: Operating System :: POSIX :: Linux
 Classifier: Programming Language :: Python :: 2
 Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
