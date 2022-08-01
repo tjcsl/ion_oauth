@@ -18,6 +18,6 @@ AUTHENTICATION_BACKENDS = [
     'ion_oauth.oauth.IonOauth2',
 ]
 ```
-to your `settings.py` for a django project.
+to `settings.py` in your django project.
 
-Define `SOCIAL_AUTH_ION_KEY` and `SOCIAL_AUTH_ION_SECRET` in your settings.py by following the instructions at https://tjcsl.github.io/ion/developing/oauth.html
+Define `SOCIAL_AUTH_ION_KEY` and `SOCIAL_AUTH_ION_SECRET` in `settings.py` by following the instructions at https://guides.tjhsst.edu/ion/using-ion-oauth.
