@@ -18,7 +18,7 @@ AUTHENTICATION_BACKENDS = [
     'ion_oauth.oauth.IonOauth2',
 ]
 ```
-to `settings.py` in your django project.
+to `settings.py` in your Django project.
 
 Define `SOCIAL_AUTH_ION_KEY` and `SOCIAL_AUTH_ION_SECRET` in `settings.py` by following the instructions at https://guides.tjhsst.edu/ion/using-ion-oauth.
 The redirect_uris for Django projects should be "http://<site-url>/complete/ion/" and "http://<site-url>/complete/ion".
